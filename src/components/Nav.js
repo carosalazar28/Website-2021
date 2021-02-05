@@ -3,78 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
 
-const StyledNav = styled.nav`
-  height: ${props => props.shown ? '100vh' : '50px'};
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  z-index: 4;
-  right:  0;
-  background: #fff;
-  overflow: hidden;
-  background: ${props => props.show ? '#ebf579' : '#fff'};
-  transition: all 0.5s ease-in-out;
-  @media screen and (min-width: 960px) {
-    position: absolute;
-    right: 0;
-    min-height: 100vh;
-    height: 100%;
-    width: 250px;
-    display: block;
-    overflow: auto;
-  }
-  ul {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  li {
-    list-style-type: none;
-    height: 60px;
-    margin: 0;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0;
-  }
-  a {
-    text-decoration: none;
-    color: #333;
-    cursor: pointer;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      background-color: #f5f5f5;
-    }
-  }
-  .nav li {
-    &:after {
-      width: calc(100% - 200px);
-      height: 1px;
-      background-color: #333;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 100px;
-    }
-  }
+const ContainerHeader = styled.header`
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
 `;
 
-StyledNav.defaultProps = {
-  shown: false,
-};
-
-const Hamburger = styled.button`
-  position: absolute;
+const ButtonIcon = styled.button`
+  position: fixed;
   top: 12.5px;
   right: 5px;
   padding: 0;
@@ -82,60 +19,70 @@ const Hamburger = styled.button`
   width: 32px;
   background: rgba(255,255,255,0);
   border: none;
-  @media screen and (min-width: 960px) {
-    display: none;
-  }
+  z-index: 3;
 `;
-
-Hamburger.defaultProps = {
-  shown: false,
-};
 
 const Container = styled.div`
   position: absolute;
   right: 0;
-  @media screen and (min-width: 960px) {
-    position: fixed;
-    width: 250px;
-  }
+  padding: 138px 24px;
+  background-color: #ebf579;
+  height: inherit;
+  width: inherit;
+`;
+
+const ItemsList = styled.ul`
+  text-align: start;
+  list-style: none;
+  font-size: 13px;
+  font-weight: bold;
+`;
+
+const ItemLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
+const Item = styled.li`
+  margin-bottom: 28px;
 `;
 
 function Nav() {
   
   const [shown, setShown] = useState(false);
 
-  const stopScroll = () => {
-    document.body.style.overflow = shown ? 'hidden' : ''
-    // block scroll on iOS safari
-    document.documentElement.style.overflow = shown ? 'hidden' : ''
-  }
-
   const handleToggleNav = () => {
     setShown(true)
-    stopScroll()
   }
 
   const handleCloseNav = () => {
-    setShown(!shown)
-    stopScroll()
+    setShown(false)
   }
 
   return (
-    <StyledNav shown={shown}>
-      <Hamburger onClick={handleToggleNav}>
-        <FontAwesomeIcon icon={"bars"} size="2x"/>
-      </Hamburger>
+    <ContainerHeader>
+      {shown ? (
+        <ButtonIcon onClick={handleCloseNav}>
+          <FontAwesomeIcon icon={"times-circle"} size="2x" />
+        </ButtonIcon>
+      ) : (
+        <ButtonIcon onClick={handleToggleNav}>
+          <FontAwesomeIcon icon={"bars"} size="2x"/>
+        </ButtonIcon>
+      )}
       {shown ? (
         <Container>
-          <ul className="nav">
-            <li><Link onClick={handleCloseNav} to="/">Home</Link></li>
-            <li><Link onClick={handleCloseNav} to="/experience">Experience</Link></li>
-            <li><Link onClick={handleCloseNav} to="/projects">Projects</Link></li>
-            <li><Link onClick={handleCloseNav} to="/blog">Blog</Link></li>
-          </ul>
+          <ItemsList className="nav">
+            <Item><ItemLink onClick={handleCloseNav} to="/">Home</ItemLink></Item>
+            <Item><ItemLink onClick={handleCloseNav} to="/profile">Profile</ItemLink></Item>
+            <Item><ItemLink onClick={handleCloseNav} to="/projects">Projects</ItemLink></Item>
+            <Item><ItemLink onClick={handleCloseNav} to="/skills">Skills</ItemLink></Item>
+            <Item><ItemLink onClick={handleCloseNav} to="/education">Education</ItemLink></Item>
+            <Item><ItemLink onClick={handleCloseNav} to="/contact">Contact</ItemLink></Item>
+          </ItemsList>
         </Container>
       ) : (null)}
-    </StyledNav>
+    </ContainerHeader>
   );
 }
 
