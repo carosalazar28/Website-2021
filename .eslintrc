@@ -5,8 +5,7 @@
     "jest": true
   },
   "extends": [
-    "eslint:recommended",
-    "react-app"
+    "eslint:recommended"
   ],
   "plugins": ["prettier"],
   "rules": {
@@ -19,7 +18,6 @@
       }
     ],
     "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
     "semi": ["error", "always"]
   }
 }

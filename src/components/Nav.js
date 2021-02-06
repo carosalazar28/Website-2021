@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
 const ContainerHeader = styled.header`
@@ -13,7 +13,7 @@ const ContainerHeader = styled.header`
 const ButtonIcon = styled.button`
   position: fixed;
   top: 12.5px;
-  right: 5px;
+  right: 45px;
   padding: 0;
   height: 32px;
   width: 32px;
@@ -48,16 +48,16 @@ const Item = styled.li`
 `;
 
 function Nav() {
-  
+
   const [shown, setShown] = useState(false);
 
   const handleToggleNav = () => {
-    setShown(true)
-  }
+    setShown(true);
+  };
 
   const handleCloseNav = () => {
-    setShown(false)
-  }
+    setShown(false);
+  };
 
   return (
     <ContainerHeader>
