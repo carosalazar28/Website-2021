@@ -34,6 +34,7 @@ function Home() {
         </figure>
         <blockquote>
           <ParragrahpQuote>
+            {/* eslint-disable-next-line */}
             "If you can't love yourself, how in the hell you gonna love somebody else"
           </ParragrahpQuote>
           <h4>RuPaul</h4>

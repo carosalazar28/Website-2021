@@ -42,6 +42,11 @@ const ItemsList = styled.ul`
 const ItemLink = styled(Link)`
   text-decoration: none;
   color: black;
+  &active: {
+    background-color: rgba(255, 255, 255, 0.69);
+    border-radius: 7px;
+    padding: 2px 10px;
+  };
 `;
 
 const Item = styled.li`
