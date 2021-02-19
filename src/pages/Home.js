@@ -1,3 +1,4 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Name,
@@ -16,7 +17,7 @@ function Home() {
     <Section>
       <Name> Carolina <br/> Salazar </Name>
       <Carrer> Front End Developer </Carrer>
-      <ContactInfo> 
+      <ContactInfo>
         <IconMargin icon={['fab', 'github']} size="2x"/>
         <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
       </ContactInfo>
@@ -26,9 +27,9 @@ function Home() {
       </ContactInfo>
       <SectionQuoute>
         <figure>
-          <img 
-            src="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1610402784/portfolio/cover_pasyhb.svg" 
-            alt="Imagen de cover para el home" 
+          <img
+            src="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1610402784/portfolio/cover_pasyhb.svg"
+            alt="Imagen de cover para el home"
           />
         </figure>
         <blockquote>
@@ -39,7 +40,7 @@ function Home() {
         </blockquote>
       </SectionQuoute>
     </Section>
-  )
+  );
 }
 
-export default Home
+export default Home;

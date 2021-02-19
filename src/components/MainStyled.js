@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledSection = styled.main`
@@ -8,7 +9,7 @@ const StyledSection = styled.main`
   flex-direction: column;
   align-items: baseline;
   text-align: initial;
-  
+
   @media screen and (min-width: 768px) {
     grid-column-start: 2;
     min-height: 100vh;

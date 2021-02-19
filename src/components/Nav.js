@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -63,11 +64,11 @@ function Nav() {
     <ContainerHeader>
       {shown ? (
         <ButtonIcon onClick={handleCloseNav}>
-          <FontAwesomeIcon icon={"times-circle"} size="2x" />
+          <FontAwesomeIcon icon={'times-circle'} size="2x" />
         </ButtonIcon>
       ) : (
         <ButtonIcon onClick={handleToggleNav}>
-          <FontAwesomeIcon icon={"bars"} size="2x"/>
+          <FontAwesomeIcon icon={'bars'} size="2x"/>
         </ButtonIcon>
       )}
       {shown ? (
