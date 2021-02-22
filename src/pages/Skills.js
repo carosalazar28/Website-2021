@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ContainerSection, SectionName, } from '../components/ProjectsStyled';
+import {
+  ContainerSection, SectionName, } from '../components/ProjectsStyled';
+import { ContainerListSkills } from '../components/SkillsStyled';
 
 export function Skills() {
   return(
@@ -14,12 +16,12 @@ export function Skills() {
         </p>
       </div>
       <div>
-        <ul>
+        <ContainerListSkills>
           <li>
             <FontAwesomeIcon icon={'html5'} size="2x" />
             <span>HTML 5</span>
           </li>
-        </ul>
+        </ContainerListSkills>
       </div>
     </ContainerSection>
   );
