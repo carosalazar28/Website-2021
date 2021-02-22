@@ -30,6 +30,7 @@ const Container = styled.div`
   background-color: #ebf579;
   height: inherit;
   width: inherit;
+  z-index: 2;
 `;
 
 const ItemsList = styled.ul`

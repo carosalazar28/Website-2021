@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const ContainerProjects = styled.section`
+export const ContainerSection = styled.section`
   padding: 86px 0;
 
   &:before {
-    background-color: #8dcf3f;
+    background-color: #EBF579;
     height: 5px;
     position: absolute;
     width: 67px;
@@ -15,7 +15,7 @@ export const ContainerProjects = styled.section`
 
 export const SectionName = styled.h2`
   text-align: start;
-  padding: 5px 10px 10px;
+  padding: 5px 10px 25px;
 `;
 
 export const ListProjects = styled.ul`
@@ -43,6 +43,10 @@ export const ProjectOverlay = styled.div`
   top: 0;
   font-size: 13px;
   color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background-color: rgba(255, 255, 255, 0.69);
     color: black;
@@ -61,5 +65,5 @@ export const ProjectOverlay = styled.div`
 
 export const TitleProject = styled.h3`
   font-size: 15px;
-  margin: 15px 0 0;
+  margin: 8px 0 0;
 `;
