@@ -4,6 +4,7 @@ import {
   faEnvelopeOpenText,
   faBars,
   faTimesCircle,
+  faLink,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faGithub, faLinkedin, faEnvelopeOpenText, faBars, faTimesCircle, );
+library.add(faGithub, faLinkedin, faEnvelopeOpenText, faBars, faTimesCircle, faLink, );
