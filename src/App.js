@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import { Profile } from './pages/Profile';
 import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
+import { Education } from './pages/Education';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/skills" component={Skills} />
+          <Route exact path="/education" component={Education} />
         </Switch>
       </Router>
     </div>
