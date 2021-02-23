@@ -1,4 +1,6 @@
 import React from 'react';
+import { CIcon } from '@coreui/icons-react';
+// import { cifAU } from '@coreui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContainerSection, SectionName, } from '../components/styled/ContainerSection';
 import { TextDescription } from '../components/styled/TextSyles';
@@ -50,7 +52,7 @@ export function Skills() {
             <TextSkill>Figma</TextSkill>
           </ListItemSkills>
           <ListItemSkills>
-            <FontAwesomeIcon icon={['fab', 'figma']} size="3x" />
+            <CIcon name="cil-list" size="2xl"/>
             <TextSkill>Figma</TextSkill>
           </ListItemSkills>
         </ContainerListSkills>
