@@ -3,6 +3,12 @@ import {
   faGithub,
   faLinkedin,
   faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faNode,
+  faDocker,
+  faFigma,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faEnvelopeOpenText,
@@ -19,4 +25,10 @@ library.add(
   faTimesCircle,
   faLink,
   faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faNode,
+  faDocker,
+  faFigma,
 );

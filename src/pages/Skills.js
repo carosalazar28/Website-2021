@@ -1,8 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ContainerSection, SectionName, } from '../components/styled/ContainerSection';
+import { TextDescription } from '../components/styled/TextSyles';
 import {
-  ContainerSection, SectionName, } from '../components/ProjectsStyled';
-import { ContainerListSkills } from '../components/SkillsStyled';
+  ContainerListSkills,
+  ListItemSkills,
+  TextSkill,
+} from '../components/SkillsStyled';
 
 export function Skills() {
   return(
@@ -11,16 +15,44 @@ export function Skills() {
         <SectionName>
           Skills
         </SectionName>
-        <p>
+        <TextDescription>
           During my career I have been exposed to different technologies, in this section I share some of the them:
-        </p>
+        </TextDescription>
       </div>
       <div>
         <ContainerListSkills>
-          <li>
-            <FontAwesomeIcon icon={'html5'} size="2x" />
-            <span>HTML 5</span>
-          </li>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'html5']} size="3x" />
+            <TextSkill>HTML 5</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'css3']} size="3x" />
+            <TextSkill>CSS 3</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'js']} size="3x" />
+            <TextSkill>JavaScript</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'react']} size="3x" />
+            <TextSkill>React Js</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'node']} size="3x" />
+            <TextSkill>Node Js</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'docker']} size="3x" />
+            <TextSkill>Docker</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'figma']} size="3x" />
+            <TextSkill>Figma</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'figma']} size="3x" />
+            <TextSkill>Figma</TextSkill>
+          </ListItemSkills>
         </ContainerListSkills>
       </div>
     </ContainerSection>

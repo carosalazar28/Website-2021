@@ -4,11 +4,10 @@ import {
   ListProjects,
   ListAnchor,
   ImageProject,
-  ContainerSection,
   ProjectOverlay,
   TitleProject,
-  SectionName,
 } from '../components/ProjectsStyled';
+import { ContainerSection, SectionName, } from '../components/styled/ContainerSection';
 
 export function Projects() {
   return(

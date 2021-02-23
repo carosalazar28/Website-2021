@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
 const ContainerHeader = styled.header`
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   right: 0;
   height: 100vh;
   width: 50vw;
