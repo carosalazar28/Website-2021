@@ -9,12 +9,16 @@ import {
   faNode,
   faDocker,
   faFigma,
+  faGitAlt,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faEnvelopeOpenText,
   faBars,
   faTimesCircle,
   faLink,
+  faBrain,
+  faPalette,
+  faChalkboardTeacher,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -31,4 +35,8 @@ library.add(
   faNode,
   faDocker,
   faFigma,
+  faGitAlt,
+  faBrain,
+  faPalette,
+  faChalkboardTeacher,
 );

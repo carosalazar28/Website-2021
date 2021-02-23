@@ -1,6 +1,4 @@
 import React from 'react';
-import { CIcon } from '@coreui/icons-react';
-// import { cifAU } from '@coreui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContainerSection, SectionName, } from '../components/styled/ContainerSection';
 import { TextDescription } from '../components/styled/TextSyles';
@@ -17,8 +15,8 @@ export function Skills() {
         <SectionName>
           Skills
         </SectionName>
-        <TextDescription>
-          During my career I have been exposed to different technologies, in this section I share some of the them:
+        <TextDescription style={{ paddingRight: 37, paddingLeft: 37 }}>
+          During my career I learned different technologies and developed soft skills, in this section I share some of the them:
         </TextDescription>
       </div>
       <div>
@@ -44,6 +42,10 @@ export function Skills() {
             <TextSkill>Node Js</TextSkill>
           </ListItemSkills>
           <ListItemSkills>
+            <img src="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1614119326/portfolio/mongodb_1_ytirwk.png"/>
+            <TextSkill>MongoDB</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
             <FontAwesomeIcon icon={['fab', 'docker']} size="3x" />
             <TextSkill>Docker</TextSkill>
           </ListItemSkills>
@@ -52,8 +54,24 @@ export function Skills() {
             <TextSkill>Figma</TextSkill>
           </ListItemSkills>
           <ListItemSkills>
-            <CIcon name="cil-list" size="2xl"/>
-            <TextSkill>Figma</TextSkill>
+            <img src="https://img.icons8.com/ios/50/000000/notion.png"/>
+            <TextSkill>Notion</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fab', 'git-alt']} size="3x" />
+            <TextSkill>Git</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fas', 'brain']} size="3x" />
+            <TextSkill>Critical thinking</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fas', 'palette']} size="3x" />
+            <TextSkill>Creative</TextSkill>
+          </ListItemSkills>
+          <ListItemSkills>
+            <FontAwesomeIcon icon={['fas', 'chalkboard-teacher']} size="3x" />
+            <TextSkill>Mentoring</TextSkill>
           </ListItemSkills>
         </ContainerListSkills>
       </div>
