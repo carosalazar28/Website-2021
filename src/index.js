@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FormSpreeProvider } from '@formspree/react';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FormSpreeProvider project={REACT_APP_FORM_ID}>
+      <App />
+    </FormSpreeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
