@@ -28,6 +28,9 @@ function Home() {
       <SectionQuoute>
         <figure>
           <img
+            srcSet="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1610402784/portfolio/cover_pasyhb.svg 414w"
+            sizes="(max-width: 414px) 414px,
+                  830px"
             src="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1610402784/portfolio/cover_pasyhb.svg"
             alt="Imagen de cover para el home"
           />
