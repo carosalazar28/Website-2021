@@ -51,3 +51,11 @@ export const ButtomTop = styled(Link)`
   text-decoration: revert;
   color: black;
 `;
+
+export const SucceededForm = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-repeat: no-repeat;
+`;

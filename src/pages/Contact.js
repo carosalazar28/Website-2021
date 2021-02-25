@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContainerSection, SectionName } from '../components/styled/ContainerSection';
-import { FormContainer, InputForm, LabelForm, ButtonSend, ButtomTop, } from '../components/ContactStyled';
+import {
+  FormContainer,
+  InputForm,
+  LabelForm,
+  ButtonSend,
+  ButtomTop,
+  SucceededForm,
+} from '../components/ContactStyled';
 import { useForm, ValidationError } from '@formspree/react';
 
 export function Contact() {
 
-  const[name, setName] = useState('');
-  const[email, setEmail] = useState('');
-  const[message, setMessage] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [state, handleSubmit] = useForm('contactMe');
 
-  if(state.succeded) {
+  if(state.succeeded) {
     return(
-      <p>Thanks for contact me</p>
+      <ContainerSection>
+        <SucceededForm>
+          <p>Thanks for contact me</p>
+        </SucceededForm>
+        <ButtomTop to="/">
+          <FontAwesomeIcon icon={'arrow-alt-circle-up'} size="2x" />
+        </ButtomTop>
+      </ContainerSection>
     );
   }
 
@@ -61,7 +75,7 @@ export function Contact() {
             >
             </InputForm>
           </LabelForm>
-          <ButtonSend type="submit" >SEND</ButtonSend>
+          <ButtonSend type="submit" disabled={state.submitting} >SEND</ButtonSend>
           <ValidationError errors={state.errors} />
         </FormContainer>
         <ButtomTop to="/">

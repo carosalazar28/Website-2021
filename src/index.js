@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { FormSpreeProvider } from '@formspree/react';
+import { FormspreeProvider } from '@formspree/react';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormSpreeProvider project="1621591400397143328">
+    <FormspreeProvider project="1621591400397143328" >
       <App />
-    </FormSpreeProvider>
+    </FormspreeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
