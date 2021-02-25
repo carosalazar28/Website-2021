@@ -21,6 +21,7 @@ export const InputForm = styled.input`
   width: 208px;
   border: none;
   margin-left: 42px;
+  border-bottom: 1px solid #c4c4c4;
   &:focus {
     outline-color: #EBF579;
   };
