@@ -19,6 +19,7 @@ import {
   faBrain,
   faPalette,
   faChalkboardTeacher,
+  faArrowAltCircleUp
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -39,4 +40,5 @@ library.add(
   faBrain,
   faPalette,
   faChalkboardTeacher,
+  faArrowAltCircleUp,
 );
