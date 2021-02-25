@@ -1,15 +1,21 @@
 * {
   margin: 0;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+textarea,
+input,
+a {
+  font-family: 'Nanum Gothic', sans-serif;
 }
