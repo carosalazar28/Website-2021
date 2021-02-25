@@ -7,7 +7,7 @@ import { FormSpreeProvider } from '@formspree/react';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormSpreeProvider project={REACT_APP_FORM_ID}>
+    <FormSpreeProvider project="1621591400397143328">
       <App />
     </FormSpreeProvider>
   </React.StrictMode>,

@@ -2,17 +2,20 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContainerSection, SectionName } from '../components/styled/ContainerSection';
 import { FormContainer, InputForm, LabelForm, ButtonSend, ButtomTop, } from '../components/ContactStyled';
+import { useForm, ValidationError } from '@formspree/react';
 
 export function Contact() {
 
   const[name, setName] = useState('');
   const[email, setEmail] = useState('');
   const[message, setMessage] = useState('');
+  const [state, handleSubmit] = useForm('contactMe');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
-  };
+  if(state.succeded) {
+    return(
+      <p>Thanks for contact me</p>
+    );
+  }
 
   return(
     <ContainerSection>
@@ -40,6 +43,7 @@ export function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            <ValidationError field="email" prefix="Email" errors={state.errors} />
           </LabelForm>
           <LabelForm htmlFor="message">
             <span>Message</span>
@@ -58,6 +62,7 @@ export function Contact() {
             </InputForm>
           </LabelForm>
           <ButtonSend type="submit" >SEND</ButtonSend>
+          <ValidationError errors={state.errors} />
         </FormContainer>
         <ButtomTop to="/">
           <FontAwesomeIcon icon={'arrow-alt-circle-up'} size="2x" />

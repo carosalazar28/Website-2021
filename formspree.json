@@ -1,0 +1,15 @@
+{
+  "forms": {
+    "contactMe": {
+      "name": "Contact Me",
+      "actions": [
+        {"type": "email", "to": "cindy.s.r.28@hotmail.com"}
+      ],
+      "fields": {
+        "email": {
+          "required": true
+        }
+      }
+    }
+  }
+}
