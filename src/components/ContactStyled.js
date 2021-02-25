@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const FormContainer = styled.form`
   display: flex;
@@ -41,4 +42,12 @@ export const ButtonSend = styled.button`
   &:focus {
     outline: none;
   };
+`;
+
+export const ButtomTop = styled(Link)`
+  position: relative;
+  right: -35%;
+  z-index: 1;
+  text-decoration: revert;
+  color: black;
 `;

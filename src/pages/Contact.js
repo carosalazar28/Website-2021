@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContainerSection, SectionName } from '../components/styled/ContainerSection';
-import { FormContainer, InputForm, LabelForm, ButtonSend } from '../components/ContactStyled';
+import { FormContainer, InputForm, LabelForm, ButtonSend, ButtomTop, } from '../components/ContactStyled';
 
 export function Contact() {
 
@@ -58,6 +59,9 @@ export function Contact() {
           </LabelForm>
           <ButtonSend type="submit" >SEND</ButtonSend>
         </FormContainer>
+        <ButtomTop to="/">
+          <FontAwesomeIcon icon={'arrow-alt-circle-up'} size="2x" />
+        </ButtomTop>
       </div>
     </ContainerSection>
   );
