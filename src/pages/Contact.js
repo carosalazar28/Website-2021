@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ContainerSection, SectionName } from '../components/styled/ContainerSection';
+import { FormContainer, InputForm, LabelForm } from '../components/ContactStyled';
 
 export function Contact() {
 
@@ -16,10 +17,10 @@ export function Contact() {
     <ContainerSection>
       <SectionName>Contact</SectionName>
       <div>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="name">
+        <FormContainer onSubmit={handleSubmit}>
+          <LabelForm htmlFor="name">
             <span>Name</span>
-            <input
+            <InputForm
               placeholder="Your name"
               id="name"
               type="text"
@@ -27,10 +28,10 @@ export function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-          </label>
-          <label htmlFor="email">
+          </LabelForm>
+          <LabelForm htmlFor="email">
             <span>Email</span>
-            <input
+            <InputForm
               placeholder="Your email"
               id="email"
               type="text"
@@ -38,23 +39,24 @@ export function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-          </label>
-          <label htmlFor="message">
+          </LabelForm>
+          <LabelForm htmlFor="message">
             <span>Message</span>
-            <textarea
+            <InputForm
+              as={'textarea'}
               id="message"
               type="text"
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              rows="10"
-              cols="20"
+              rows="15"
+              cols="32"
               placeholder="Hi, Carolina, I would like work with you..."
             >
-            </textarea>
-          </label>
+            </InputForm>
+          </LabelForm>
           <button type="submit" >SEND</button>
-        </form>
+        </FormContainer>
       </div>
     </ContainerSection>
   );
