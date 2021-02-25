@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Footer } from '../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContainerSection, SectionName } from '../components/styled/ContainerSection';
 import {
@@ -27,6 +28,7 @@ export function Contact() {
         <ButtomTop to="/">
           <FontAwesomeIcon icon={'arrow-alt-circle-up'} size="2x" />
         </ButtomTop>
+        <Footer />
       </ContainerSection>
     );
   }
@@ -82,6 +84,7 @@ export function Contact() {
           <FontAwesomeIcon icon={'arrow-alt-circle-up'} size="2x" />
         </ButtomTop>
       </div>
+      <Footer />
     </ContainerSection>
   );
 }
