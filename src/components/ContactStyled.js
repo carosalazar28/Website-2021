@@ -25,3 +25,19 @@ export const InputForm = styled.input`
     outline-color: #EBF579;
   };
 `;
+
+export const ButtonSend = styled.button`
+  padding: 10px 26px;
+  border-radius: 7px;
+  border: none;
+  background-color: #EBF579;
+  font-size: 13px;
+  font-weight: bold;
+  &:hover {
+    background-color: #ebf57982;
+    border: 1px solid #ebf579;
+  };
+  &:focus {
+    outline: none;
+  };
+`;

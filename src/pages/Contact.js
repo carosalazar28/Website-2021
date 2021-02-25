@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ContainerSection, SectionName } from '../components/styled/ContainerSection';
-import { FormContainer, InputForm, LabelForm } from '../components/ContactStyled';
+import { FormContainer, InputForm, LabelForm, ButtonSend } from '../components/ContactStyled';
 
 export function Contact() {
 
@@ -44,6 +44,7 @@ export function Contact() {
             <span>Message</span>
             <InputForm
               as={'textarea'}
+              style={{ marginLeft: 25 }}
               id="message"
               type="text"
               name="message"
@@ -55,7 +56,7 @@ export function Contact() {
             >
             </InputForm>
           </LabelForm>
-          <button type="submit" >SEND</button>
+          <ButtonSend type="submit" >SEND</ButtonSend>
         </FormContainer>
       </div>
     </ContainerSection>
