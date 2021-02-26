@@ -3,10 +3,19 @@ import styled from 'styled-components';
 export const ListProjects = styled.ul`
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  grid-auto-flow: row dense;
+  @media screen and (min-width: 320px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const ListAnchor = styled.a`
-  display: block;
   position: relative;
   line-height: 0;
   color: black;
@@ -14,6 +23,7 @@ export const ListAnchor = styled.a`
 
 export const ImageProject = styled.img`
   width: 100%;
+  object-fit: cover;
 `;
 
 export const ProjectOverlay = styled.div`

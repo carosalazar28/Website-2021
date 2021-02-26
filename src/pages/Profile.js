@@ -11,7 +11,10 @@ export function Profile() {
     <ContainerAboutMe>
       <figure>
         <PhotoAboutMe
-          src="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1610402819/portfolio/aboutme_pevhwq.jpg"
+          srcSet="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1610402819/portfolio/aboutme_pevhwq.jpg 414w"
+          sizes="(max-width: 414px) 414px,
+                768px"
+          src="https://res.cloudinary.com/dkcbxnhg0/image/upload/v1614295576/portfolio/aboutmeIpad_esh328.png"
           alt="Profile photo Carolina"
         />
       </figure>

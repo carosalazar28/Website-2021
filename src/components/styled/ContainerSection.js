@@ -16,4 +16,7 @@ export const ContainerSection = styled.section`
 export const SectionName = styled.h2`
   text-align: start;
   padding: 5px 10px 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  };
 `;
