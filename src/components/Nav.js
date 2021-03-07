@@ -10,6 +10,9 @@ const ContainerHeader = styled.header`
   right: 0;
   height: 100vh;
   width: 50vw;
+  @media screen and (min-width: 768px) {
+    width: 30vw;
+  }
 `;
 
 const ButtonIcon = styled.button`
