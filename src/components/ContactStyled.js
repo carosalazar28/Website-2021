@@ -13,6 +13,9 @@ export const LabelForm = styled.label`
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const InputForm = styled.input`
@@ -58,4 +61,19 @@ export const SucceededForm = styled.div`
   align-items: center;
   height: 80vh;
   background-repeat: no-repeat;
+`;
+
+export const LabelsFlex = styled.span`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 634px;
+    justify-content: space-between;
+  }
+`;
+
+export const TextArea = styled(InputForm)`
+  @media screen and (min-width: 768px) {
+    width: 537px;
+  }
 `;
