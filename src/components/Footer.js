@@ -8,11 +8,19 @@ const FooterStyle = styled.footer`
   position: absolute;
   font-size: 13px;
   text-align: initial;
+  width: 100vw;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 `;
 
 const ContentFooter = styled.div`
   margin-bottom: 25px;
   line-height: 13px;
+  @media screen and (min-width: 768px) {
+    width: 215px;
+  }
 `;
 
 const ParragraphMade = styled.p`
