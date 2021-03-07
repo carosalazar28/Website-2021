@@ -11,6 +11,13 @@ export const ContainerSection = styled.section`
     content: '';
     left: 10px;
   };
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+
+    &:before {
+      left: 30px;
+    }
+  }
 `;
 
 export const SectionName = styled.h2`
