@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const ContainerFlex = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const ContainerListSkills = styled.ul`
   padding: 20px 37px;
   list-style: none;
