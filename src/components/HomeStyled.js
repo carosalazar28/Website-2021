@@ -47,7 +47,7 @@ export const ParragrahpQuote = styled.blockquote`
   }
   @media screen and (min-width: 768px) {
     font-size: 24px;
-    width: 246px;
+    width: 350px;
     margin-left: 39px;
   };
 `;
