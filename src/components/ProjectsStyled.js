@@ -18,7 +18,7 @@ export const ListProjects = styled.ul`
 export const ListAnchor = styled.a`
   position: relative;
   line-height: 0;
-  color: black;
+  color: ${(props) => props.theme.justBlack};
 `;
 
 export const ImageProject = styled.img`
@@ -40,15 +40,19 @@ export const ProjectOverlay = styled.div`
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: rgba(255, 255, 255, 0.69);
+    background-color: ${(props) => props.theme.focusPrimaryColor};
     color: black;
     h5 {
-      background-image: linear-gradient(120deg, #ebf579, rgba(235, 245, 121, 1));
+      background-image: linear-gradient(
+        120deg,
+        ${(props) => props.theme.primaryColor},
+        ${(props) => props.theme.grayHoverImage}
+      );
       width: fit-content;
-      background-size: 100% .6em;
+      background-size: 100% 0.6em;
       background-repeat: no-repeat;
       background-position: center 75%;
-      transition: background-size .3s ease-in;
+      transition: background-size 0.3s ease-in;
       margin: 10px auto 0;
       font-weight: bold;
     }

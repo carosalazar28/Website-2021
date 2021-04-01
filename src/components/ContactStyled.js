@@ -25,26 +25,26 @@ export const InputForm = styled.input`
   width: 208px;
   border: none;
   margin-left: 42px;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid ${(props) => props.theme.graySolid};
   &:focus {
-    outline-color: #EBF579;
-  };
+    outline-color: ${(props) => props.theme.primaryColor};
+  }
 `;
 
 export const ButtonSend = styled.button`
   padding: 10px 26px;
   border-radius: 7px;
   border: none;
-  background-color: #EBF579;
+  background-color: ${(props) => props.theme.primaryColor};
   font-size: 13px;
   font-weight: bold;
   &:hover {
-    background-color: #ebf57982;
-    border: 1px solid #ebf579;
-  };
+    background-color: ${(props) => props.theme.hoverPrimary};
+    border: 1px solid ${(props) => props.theme.primaryColor};
+  }
   &:focus {
     outline: none;
-  };
+  }
 `;
 
 export const ButtomTop = styled(Link)`
