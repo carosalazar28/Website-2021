@@ -12,6 +12,7 @@ export const ListAnchor = styled.a`
 
 export const ImageProject = styled.img`
   width: 100%;
+  height: 180px;
   object-fit: cover;
 `;
 
