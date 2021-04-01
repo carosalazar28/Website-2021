@@ -99,7 +99,7 @@ export function Projects() {
               <p>Project Manager and Development FrontEnd and BackEnd</p>
             </div>
             <div>
-              <h5>Tech stack:</h5>
+              <h5>Tec stack:</h5>
               <p>Notion, Trello</p>
               <ListAnchor
                 href="https://www.notion.so/Sprinter-b94053fcec734e1da09d7c3d52a2a490"

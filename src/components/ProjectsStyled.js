@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ListProjects = styled.ul`
   list-style: none;
-  padding: 0;
+  padding: 0 5px;
 `;
 
 export const ListAnchor = styled.a`
