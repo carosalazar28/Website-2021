@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { FormspreeProvider } from '@formspree/react';
+import theme from './assets/theme';
+import { ThemeProvider } from 'styled-components';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormspreeProvider project="1621591400397143328" >
-      <App />
-    </FormspreeProvider>
+    <ThemeProvider theme={theme}>
+      <FormspreeProvider project="1621591400397143328">
+        <App />
+      </FormspreeProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
