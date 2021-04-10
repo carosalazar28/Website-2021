@@ -14,6 +14,7 @@ export const ImageProject = styled.img`
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-radius: 15px;
 `;
 
 export const ProjectOverlay = styled.div``;
