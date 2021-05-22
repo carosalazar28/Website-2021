@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const ListProjects = styled.ul`
   list-style: none;
   padding: 0 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 15px;
 `;
 
 export const ListAnchor = styled.a`
